@@ -5,14 +5,34 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* font-size: 8px; */
+      /* body {
+        margin: 0;
+        padding: 0;
+      } */
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
+
   <body>
 
     <h2>不良品判定サンプル</h2>
-    <p>【スタート】ボタンをクリックしてください。</p>
-    <p>Webカメラが起動するので、正常品/不良品の認識確認を行います</p>
-    ※OK:正常判定、NG:以上判定
-    <p>終了するときは【ストップ】ボタンをクリックします。</p>
+    <div style="font-size: 14px;">
+      <p style="margin-bottom: 3px">【スタート】ボタンをクリックしてください。</p>
+      <p style="margin-bottom: 10px">Webカメラが起動するので、正常品/不良品の認識確認を行います</p>
+      <p style="margin-bottom: 1px">--> OK:正常判定の確信度、NG:異常判定の確信度</p>
+      <p style="margin-bottom: 10px">（確信度は 0 ～ 1 の値を出力（1に近いほど確信度が高い、0に近いほど確信度が低い）</p>
+    </div>
+
+    <div style="font-size: 12px;">
+      <p style="margin-bottom: 1px">※Chromeブラウザでアクセスしてください（他のブラウザでテストしてないです）</p>
+      <p style="margin-bottom: 1px">※ブラウザでポップアップでたら、「カメラを使用する」を許可してください</p>
+      <p style="margin-bottom: 10px">終了するときは【ストップ】ボタンをクリックします。</p>
+    </div>
     <button onclick="init()">スタート</button>
     <button onclick="stopCamera()">ストップ</button>
 
